@@ -1,9 +1,9 @@
 # Cannonball-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/Link4Electronics/Cannonball-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/Link4Electronics/Cannonball-AppImage/releases/latest)
-[![CI Build Status](https://github.com//Link4Electronics/Cannonball-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/Link4Electronics/Cannonball-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Cannonball-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Cannonball-AppImage/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/Cannonball-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Cannonball-AppImage/releases/latest)
 
-* [Latest Stable Release](https://github.com/Link4Electronics/Cannonball-AppImage/releases/latest)
+* [Latest Stable Release](https://github.com/pkgforge-dev/Cannonball-AppImage/releases/latest)
 
 ---
 
