@@ -3,7 +3,10 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q cannonball-git | awk '{print $2; exit}') # example command to get version of application here
+if [ "${DEVEL_RELEASE-}" = 1 ]; then
+  VERSION=$(pacman -Q cannonball-git | awk '{print $2; exit}') # example command to get version of application here
+else
+  VERSION=$(pacman -Q cannonball | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
