@@ -17,5 +17,6 @@ if [ "${DEVEL_RELEASE-}" = 1 ]; then
   make-aur-package cannonball-git
 else
   make-aur-package cannonball
+fi
 
 # If the application needs to be manually built that has to be done down here
