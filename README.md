@@ -17,7 +17,7 @@
 
 </div>
 
-### ⚠️ Game assets in `~/.config/cannonball/roms/` ⚠️
+### ⚠️ Game assets within `~/.config/cannonball/roms/` ⚠️
 
 ---
 
