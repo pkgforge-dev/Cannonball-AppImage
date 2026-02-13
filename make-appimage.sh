@@ -14,6 +14,8 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun /opt/cannonball
+mv -v /opt/cannonball/res ./AppDir/bin
+mv -v /opt/cannonball/config.xml ./AppDir/bin
 
 # Additional changes can be done in between here
 
