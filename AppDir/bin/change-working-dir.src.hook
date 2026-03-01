@@ -1,6 +1,6 @@
 #!/bin/false
 dir=${XDG_CONFIG_HOME:-~/.config}/cannonball
-if [ ! -f "dir"/config.xml ]; then
+if [ ! -f "$dir"/config.xml ]; then
   mkdir -p "$dir"
   cp -r "$APPDIR"/bin/res "$dir"
   cp "$APPDIR"/bin/config.xml "$dir"
