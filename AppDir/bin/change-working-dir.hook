@@ -1,0 +1,8 @@
+#!/bin/sh
+dir=$CONFIGDIR/cannonball
+mkdir -p "$dir"
+if [ ! -f "$dir"/config.xml ]; then
+  cp -r "$APPDIR"/bin/res "$dir"
+  cp "$APPDIR"/bin/config.xml "$dir"
+fi
+cd "$dir"
