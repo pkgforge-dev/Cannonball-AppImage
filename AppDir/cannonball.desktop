@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=CannonBall
+GenericName=Enhanced OutRun Engine
+Type=Application
+Exec=cannonball
+Icon=cannonball
+StartupNotify=true
+StartupWMClass=cannonball
+Terminal=false
+Categories=Game;ArcadeGame;Emulator
