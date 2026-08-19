@@ -24,6 +24,7 @@ git clone "$REPO" ./cannonball
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin/res
+mkdir -p ./AppDir/bin/roms
 cd ./cannonball
 cmake -S ./ -B build -D CMAKE_BUILD_TYPE=Release -DTARGET=linux.cmake -DOpenGL_GL_PREFERENCE=GLVND -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake --build build -j$(nproc)
@@ -31,3 +32,6 @@ mv -v build/cannonball ../AppDir/bin
 mv -v ./res/config.xml ./AppDir/bin
 sed -i s/hires\>0/hires\>1/g ./AppDir/bin/config.xml
 mv -v ./res/tilemap.bin ./res/tilepatch.bin  ./AppDir/bin/res
+cd ..
+git clone https://github.com/jacktang/outrun-roms
+mv -v ./outrun-roms/* -t ./AppDir/bin/roms
