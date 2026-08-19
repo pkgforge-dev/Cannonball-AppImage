@@ -33,4 +33,3 @@ mv -v build/cannonball ../AppDir/bin
 mv -v ./res/config.xml ../AppDir/bin
 sed -i s/hires\>0/hires\>1/g ../AppDir/bin/config.xml
 mv -v ./res/tilemap.bin ./res/tilepatch.bin  ../AppDir/bin/res
-cd ../
