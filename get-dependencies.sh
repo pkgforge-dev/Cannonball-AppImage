@@ -28,4 +28,5 @@ cd ./cannonball
 cmake -S ./ -B build -D CMAKE_BUILD_TYPE=Release -DTARGET=linux.cmake -DOpenGL_GL_PREFERENCE=GLVND -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake --build build -j$(nproc)
 mv -v build/cannonball ../AppDir/bin
-mv -v ./res/config.xml ./res/ ./AppDir/bin
+mv -v ./res/config.xml ./AppDir/bin
+mv -v ./res/tilemap.bin ./res/tilepatch.bin  ./AppDir/bin/res
