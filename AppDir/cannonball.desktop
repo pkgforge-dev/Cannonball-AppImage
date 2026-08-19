@@ -2,8 +2,9 @@
 Name=CannonBall
 GenericName=Enhanced OutRun Engine
 Type=Application
-Icon=cannonball
 Exec=cannonball
+Icon=cannonball
 StartupNotify=true
+StartupWMClass=cannonball
 Terminal=false
 Categories=Game;ArcadeGame;Emulator
