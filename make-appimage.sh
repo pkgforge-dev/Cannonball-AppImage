@@ -7,8 +7,7 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/256x256/apps/cannonball.png
-export DESKTOP=/usr/share/applications/cannonball.desktop
+export ICON=https://raw.githubusercontent.com/djyt/cannonball/refs/heads/master/res/icon.png
 export STARTUPWMCLASS=cannonball
 export DEPLOY_OPENGL=1
 
