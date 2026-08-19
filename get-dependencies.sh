@@ -24,4 +24,4 @@ git clone "$REPO" ./cannonball
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-
+cd ./cannonball
