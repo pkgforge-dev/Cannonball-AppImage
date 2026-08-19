@@ -23,8 +23,9 @@ VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
 git clone "$REPO" ./cannonball
 echo "$VERSION" > ~/version
 
-mkdir -p ./AppDir/bin
+mkdir -p ./AppDir/bin/res
 cd ./cannonball
 cmake -S ./ -B build -D CMAKE_BUILD_TYPE=Release -DTARGET=linux.cmake -DOpenGL_GL_PREFERENCE=GLVND -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake --build build -j$(nproc)
 mv -v build/cannonball ../AppDir/bin
+mv -v ./res/config.xml ./res/ ./AppDir/bin
