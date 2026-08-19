@@ -14,9 +14,6 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/cannonball
-
-mv -v /opt/cannonball/res ./AppDir/bin
-mv -v /opt/cannonball/config.xml ./AppDir/bin
 wget -O ./AppDir/bin/res/gamecontrollerdb.txt https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/master/gamecontrollerdb.txt
 
 # Turn AppDir into AppImage
