@@ -9,12 +9,11 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     boost       \
     cmake       \
-    libdecor    \
     sdl2-compat
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
 echo "Building Cannonball..."
 echo "---------------------------------------------------------------"
