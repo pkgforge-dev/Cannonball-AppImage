@@ -19,7 +19,7 @@ echo "Building Cannonball..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/djyt/cannonball"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./cannonball
+git clone --depth 1 "$REPO" ./cannonball
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin/res
